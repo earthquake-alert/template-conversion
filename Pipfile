@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+mypy = "*"
+flake8 = "*"
+pylint = "*"
+tox = "*"
+pytest = "*"
+
+[packages]
+flask = "*"
+jinja2 = "*"
+
+[requires]
+python_version = "3.8"
