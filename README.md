@@ -1,5 +1,8 @@
 # template-conversion
 
+![python](https://img.shields.io/github/pipenv/locked/python-version/earthquake-alert/template-conversion?style=flat-square)
+![license](https://img.shields.io/github/license/earthquake-alert/template-conversion?style=flat-square)
+
 🇯🇵| [🇺🇸](documents/README_en.md)
 
 ![image](assets/demo_1.png)
@@ -9,7 +12,7 @@
 - URLクエリパラメータに入力した内容にテンプレートを適用させます。
 - Seleniumなどで画面キャプチャをすると簡単に画像として保存できます。
 
-## 使い方
+## 💻使い方
 
 1. 依存関係のインストール
    python3、およびpipがインストールされていることが前提です。
@@ -34,7 +37,7 @@ python src/main.py
 
 デフォルトURL: `http://localhost:5000/template`
 
-### クエリパラメータの説明
+### 📒クエリパラメータの説明
 
 例: `http://localhost:5000/template?ti=地震速報&areas={'震度5弱':['茨城県', '埼玉県'], '震度4': ['東京都', '千葉県', '群馬県']}&exp=['午後12時頃強い地震がありました。震度３以上を観測された地域をお知らせします。', 'この地震による津波の心配はありません。']&max_si=５弱&epi=茨城県南部&mag=5.4`
 
@@ -85,3 +88,23 @@ python src/main.py
   - 震源地
 - `mag`
   - マグニチュード
+
+### 🎨震度色
+
+| 震度  |                                    色                                     |
+| :---: | :-----------------------------------------------------------------------: |
+|   0   | ![#e1e2e3](https://via.placeholder.com/15/e1e2e3/000000?text=+) `#e1e2e3` |
+|   1   | ![#56a0d1](https://via.placeholder.com/15/56a0d1/000000?text=+) `#56a0d1` |
+|   2   | ![#204eba](https://via.placeholder.com/15/204eba/000000?text=+) `#204eba` |
+|   3   | ![#d6e673](https://via.placeholder.com/15/d6e673/000000?text=+) `#d6e673` |
+|   4   | ![#dbde28](https://via.placeholder.com/15/dbde28/000000?text=+) `#dbde28` |
+|  5-   | ![#eba22d](https://via.placeholder.com/15/eba22d/000000?text=+) `#eba22d` |
+|  5+   | ![#eba22d](https://via.placeholder.com/15/eba22d/000000?text=+) `#eba22d` |
+|  6-   | ![#e62929](https://via.placeholder.com/15/e62929/000000?text=+) `#e62929` |
+|  6+   | ![#e62929](https://via.placeholder.com/15/e62929/000000?text=+) `#e62929` |
+|   7   | ![#a81d5b](https://via.placeholder.com/15/a81d5b/000000?text=+) `#a81d5b` |
+| None  | ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `#000000` |
+
+### ⚖ライセンス
+
+[MIT ライセンス](LICENSE)上で公開しています。
