@@ -2,7 +2,7 @@
 
 🇯🇵| [🇺🇸](documents/README_en.md)
 
-![image](assets/demo_1.png)
+![image](../assets/demo_1.png)
 
 ## tl;dr
 
@@ -38,7 +38,7 @@ python src/main.py
 
 例: `http://localhost:5000/template?ti=地震速報&areas={'震度5弱':['茨城県', '埼玉県'], '震度4': ['東京都', '千葉県', '群馬県']}&exp=['午後12時頃強い地震がありました。震度３以上を観測された地域をお知らせします。', 'この地震による津波の心配はありません。']&max_si=５弱&epi=茨城県南部&mag=5.4`
 
-![image](assets/demo_2.png)
+![image](../assets/demo_2.png)
 
 - `ti`
   - タイトル。緊急地震速報や地震速報など。
@@ -80,7 +80,7 @@ python src/main.py
   - 最大震度
   - `0, 1, 2, 3, 4, 5弱, 5強, 6弱, 6強, 7`が適用されます。（数字の全角可）
   - 最大震度により背景色が変わりますが、正しくない震度が入力された場合は以下のようになります。
-    ![image](assets/demo_3.png)
+    ![image](../assets/demo_3.png)
 - `epi`
   - 震源地
 - `mag`

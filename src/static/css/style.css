@@ -1,16 +1,192 @@
 body {
-    background-color: #333333;
+    background-color: #171717;
+    margin: 0 0 0 0;
 }
+
 h1 {
     text-align: center;
+    font-weight: 700;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 43px;
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin: 0 0 0 0;
+}
+
+.date {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 100;
     font-family: 'Noto Sans JP', sans-serif;
 }
+
 header {
-    background-color: #eb5252;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin: 0 0 0 0;
+}
+
+.box {
+    float: left;
+    width: 50%;
+}
+
+.explanation {
+    padding: 30px;
+    background-color: #333333;
+    color: #e0e0e0;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .areas {
-    margin-top: 30px;
+    padding: 20px;
+    color: #43cc65;
 }
+
+.magnitude {
+    padding: 10px 30px 30px 30px;
+    margin: 10px;
+    background-color: #333333;
+    color: #e0e0e0;
+    border-radius: 20px;
+}
+
+.max-seismic-intensity {
+    padding: 10px 30px 30px 30px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.epicenter {
+    padding: 10px 30px 30px 30px;
+    margin: 10px;
+    background-color: #333333;
+    color: #e0e0e0;
+    border-radius: 20px;
+}
+
+.contents {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.comment {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*
+ 震度ごとに色を変化
+ - 震度1:   class-1
+ - 震度2:   class-2
+ - 震度3:   class-3
+ - 震度4:   class-4
+ - 震度5弱: class-5
+ - 震度5強: class-55
+ - 震度6弱: class-6
+ - 震度6強: class-66
+ - 震度7:   class-7
+  */
+
+.fill.class-0 {
+    background-color: #e1e2e3;
+    color: black;
+}
+
+.fill.class-1 {
+    background-color: #56a0d1;
+    color: black;
+}
+
+.fill.class-2 {
+    background-color: #204eba;
+    color: #e0e0e0;
+}
+
+.fill.class-3 {
+    background-color: #d6e673;
+}
+
+.fill.class-4 {
+    background-color: #dbde28;
+}
+
+.fill.class-5 {
+    background-color: #eba22d;
+}
+
+.fill.class-55 {
+    background-color: #eba22d;
+}
+.fill.class-6 {
+    background-color: #e62929;
+    color: #e0e0e0;
+}
+
+.fill.class-66 {
+    background-color: #e62929;
+    color: #e0e0e0;
+}
+
+.fill.class-7 {
+    background-color: #a81d5b;
+    color: #e0e0e0;
+}
+
+.fill.none {
+    background-color: black;
+    color: #e0e0e0;
+}
+
+/*-----------*/
+
+div.class-0 {
+    border: solid 3px #e1e2e3;
+}
+
+div.class-1 {
+   border: solid 3px #56a0d1;
+}
+
+div.class-2 {
+   border: solid 3px #204eba;
+}
+
+div.class-3 {
+   border: solid 3px #d6e673;
+}
+
+div.class-4 {
+   border: solid 3px #dbde28;
+}
+
+div.class-5 {
+   border: solid 3px #eba22d;
+}
+
+div.class-55 {
+   border: solid 3px #eba22d;
+}
+div.class-6 {
+   border: solid 3px #e62929;
+}
+
+div.class-66 {
+   border: solid 3px #e62929;
+}
+
+div.class-7 {
+   border: solid 3px #a81d5b;
+}
+
+div.none {
+   border: solid 3px black;
+}
+

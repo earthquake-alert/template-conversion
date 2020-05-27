@@ -5,30 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
-    <title>Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;500;700&display=swap" rel="stylesheet">
+    <title>{{ title }}</title>
 </head>
 
 <body>
-    <header>
+    <header class="fill {{ seismic }}">
         <h1>
             {{ title }}
         </h1>
+        <div class="date">
+            {{ date }} 現在
+        </div>
     </header>
     <main>
-        <div class="areas">
-            <div class="seismic_intensity">震度4</div>
-            <div class="name">
-                埼玉県、茨城県、栃木県、群馬県、東京都
+        <div class="box">
+            <div class="magnitude {{ seismic }}">
+                <div calss="comment">マグニチュード</div>
+                <div class="contents">M{{ magnitude }}</div>
             </div>
-            <div class="seismic_intensity">震度3</div>
-            <div class="name">
-                神奈川県、福島県
+            <div class="max-seismic-intensity fill {{ seismic }}">
+                <div class="comment">最大震度</div>
+                <div class="contents">震度{{ max_seismic_intensity }}</div>
+            </div>
+            <div class="epicenter {{ seismic }}">
+                <div class="comment">震源地</div>
+                <div class="contents">{{ epicenter }}</div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="explanation {{ seismic }}">
+                <div>
+                    {{ explanation[0] }}
+                </div>
+                <div class="areas">
+                    {% for seismic_area, area in areas.items() %}
+                    <div class="seismic_intensity">[{{ seismic_area }}]</div>
+                    <div class="name">
+                        {% for value in area %}
+                        {{ value }}{{ "、" if not loop.last }}
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ explanation[1] }}
+                </div>
             </div>
         </div>
     </main>
-    <footer>
-    </footer>
 </body>
 
 </html>
