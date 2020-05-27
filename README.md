@@ -31,9 +31,9 @@
 
 2. 起動する
 
-```bash
-python src/main.py
-```
+    ```bash
+    python src/main.py
+    ```
 
 デフォルトURL: `http://localhost:5000/template`
 
