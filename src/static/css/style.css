@@ -7,8 +7,8 @@ h1 {
     text-align: center;
     font-weight: 700;
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 43px;
-    padding-top: 40px;
+    font-size: 3em;
+    padding-top: 0.5em;
     padding-bottom: 0;
     margin: 0 0 0 0;
 }
@@ -16,74 +16,94 @@ h1 {
 .date {
     text-align: center;
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 0.3em;
+    font-size: 1em;
     font-weight: 100;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 header {
-    margin: 0 0 0 0;
+    margin: 0;
 }
 
-.box {
+.left {
     float: left;
-    width: 50%;
+    width: 40%;
+    margin: 0;
+}
+
+.right {
+    float: left;
+    width: 60%;
+    margin: 0;
 }
 
 .explanation {
-    padding: 30px;
+    padding: 1.2em;
     background-color: #333333;
     color: #e0e0e0;
-    border-radius: 20px;
-    margin: 10px;
-    font-size: 20px;
+    border-radius: 1em;
+    margin: 0.5em;
+    font-size: 1.2em;
     font-weight: 500;
     font-family: 'Noto Sans JP', sans-serif;
+    max-height: none;
 }
 
 .areas {
-    padding: 20px;
-    color: #43cc65;
+    padding: 0.6em;
+    margin: 0;
+    color: #fffcba;
+}
+
+.seismic_intensity {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    width: 4.5em;
+    border-radius: 0.25em;
+    background-color: #43cc65;
+    color: black;
 }
 
 .magnitude {
-    padding: 10px 30px 30px 30px;
-    margin: 10px;
+    padding: 0.5em 1.5em 1.5em 1.5em;
+    margin: 0.5em;
     background-color: #333333;
     color: #e0e0e0;
-    border-radius: 20px;
+    border-radius: 1em;
 }
 
 .max-seismic-intensity {
-    padding: 10px 30px 30px 30px;
+    padding: 0.5em 1.5em 1.5em 1.5em;
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 1em;
 }
 
 .epicenter {
-    padding: 10px 30px 30px 30px;
-    margin: 10px;
+    padding: 0.5em 1.5em 1.5em 1.5em;
+    margin: 0.5em;
     background-color: #333333;
     color: #e0e0e0;
-    border-radius: 20px;
+    border-radius: 1em;
 }
 
 .contents {
     text-align: center;
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 2.4em;
+    font-weight: 700;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 .comment {
     text-align: left;
-    font-size: 20px;
+    font-size: 1.13em;
     font-weight: 500;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*
- 震度ごとに色を変化
+ 震度ごとに色を変化 (背景塗りつぶし)
  - 震度1:   class-1
  - 震度2:   class-2
  - 震度3:   class-3
@@ -95,47 +115,47 @@ header {
  - 震度7:   class-7
   */
 
-.fill.class-0 {
+.fill.class-0, .震度0, .震度０ {
     background-color: #e1e2e3;
     color: black;
 }
 
-.fill.class-1 {
+.fill.class-1, .震度1, .震度１ {
     background-color: #56a0d1;
     color: black;
 }
 
-.fill.class-2 {
+.fill.class-2, .震度2, .震度２ {
     background-color: #204eba;
     color: #e0e0e0;
 }
 
-.fill.class-3 {
+.fill.class-3, .震度3, .震度３ {
     background-color: #d6e673;
 }
 
-.fill.class-4 {
+.fill.class-4, .震度4, .震度４ {
     background-color: #dbde28;
 }
 
-.fill.class-5 {
+.fill.class-5, .震度5弱, .震度５弱 {
     background-color: #eba22d;
 }
 
-.fill.class-55 {
+.fill.class-55, .震度5強, .震度５強 {
     background-color: #eba22d;
 }
-.fill.class-6 {
+.fill.class-6, .震度6弱, .震度６弱 {
     background-color: #e62929;
     color: #e0e0e0;
 }
 
-.fill.class-66 {
+.fill.class-66, .震度6強, .震度６強 {
     background-color: #e62929;
     color: #e0e0e0;
 }
 
-.fill.class-7 {
+.fill.class-7, .震度7, .震度７ {
     background-color: #a81d5b;
     color: #e0e0e0;
 }
@@ -145,48 +165,49 @@ header {
     color: #e0e0e0;
 }
 
-/*-----------*/
+/*
+ 震度ごとに色を変化 (縁の着色)
+*/
 
 div.class-0 {
-    border: solid 3px #e1e2e3;
+    border: solid 0.15em #e1e2e3;
 }
 
 div.class-1 {
-   border: solid 3px #56a0d1;
+   border: solid 0.15em #56a0d1;
 }
 
 div.class-2 {
-   border: solid 3px #204eba;
+   border: solid 0.15em #204eba;
 }
 
 div.class-3 {
-   border: solid 3px #d6e673;
+   border: solid 0.15em #d6e673;
 }
 
 div.class-4 {
-   border: solid 3px #dbde28;
+   border: solid 0.15em #dbde28;
 }
 
 div.class-5 {
-   border: solid 3px #eba22d;
+   border: solid 0.15em #eba22d;
 }
 
 div.class-55 {
-   border: solid 3px #eba22d;
+   border: solid 0.15em #eba22d;
 }
 div.class-6 {
-   border: solid 3px #e62929;
+   border: solid 0.15em #e62929;
 }
 
 div.class-66 {
-   border: solid 3px #e62929;
+   border: solid 0.15em #e62929;
 }
 
 div.class-7 {
-   border: solid 3px #a81d5b;
+   border: solid 0.15em #a81d5b;
 }
 
 div.none {
-   border: solid 3px black;
+   border: solid 0.15em black;
 }
-

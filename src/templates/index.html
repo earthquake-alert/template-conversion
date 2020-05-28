@@ -19,7 +19,7 @@
         </div>
     </header>
     <main>
-        <div class="box">
+        <div class="left">
             <div class="magnitude {{ seismic }}">
                 <div class="comment">マグニチュード</div>
                 <div class="contents">M{{ magnitude }}</div>
@@ -34,14 +34,14 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="right">
             <div class="explanation {{ seismic }}">
                 <div>
                     {{ explanation[0] }}
                 </div>
                 <div class="areas">
                     {% for seismic_area, area in areas.items() %}
-                    <div class="seismic_intensity">[{{ seismic_area }}]</div>
+                    <div class="seismic_intensity {{ seismic_area }}">{{ seismic_area }}</div>
                     <div class="name">
                         {% for value in area %}
                         {{ value }}{{ "、" if not loop.last }}
