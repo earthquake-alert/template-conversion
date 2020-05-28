@@ -8,12 +8,12 @@ app = Flask(__name__)
 
 @app.route('/template')
 def template():
-    title = request.args.get('ti')
-    areas = ast.literal_eval(request.args.get('areas'))
-    explanation = ast.literal_eval(request.args.get('exp'))
-    max_seismic_intensity = request.args.get('max_si')
-    epicenter = request.args.get('epi')
-    magnitude = request.args.get('mag')
+    title = request.args.get('ti') or 'No data.'
+    areas = ast.literal_eval(request.args.get('areas') or '{"Null": ["No area."]}')
+    explanation = ast.literal_eval(request.args.get('exp') or '["No data.", "No data."]')
+    max_seismic_intensity = request.args.get('max_si') or 'No data.'
+    epicenter = request.args.get('epi') or 'No data.'
+    magnitude = request.args.get('mag') or 'No data.'
 
     now = datetime.datetime.now()
 
