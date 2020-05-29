@@ -1,3 +1,8 @@
+'''
+@author: Yuto Watanabe
+
+Copyright (c) 2020 Earthquake alert
+'''
 import ast
 import datetime
 
@@ -8,6 +13,9 @@ app = Flask(__name__)
 
 @app.route('/template')
 def template():
+    '''
+    Generate a page to which the template is applied.
+    '''
     title = request.args.get('ti') or 'No data.'
     areas = ast.literal_eval(request.args.get('areas') or '{"Null": ["No area."]}')
     explanation = ast.literal_eval(request.args.get('exp') or '["No data.", "No data."]')
