@@ -59,7 +59,7 @@ header {
 .seismic_intensity {
     padding: 0;
     text-align: center;
-    margin: 0;
+    margin: 1em 0 0 0;
     width: 4.5em;
     border-radius: 0.25em;
     background-color: #43cc65;
@@ -97,6 +97,18 @@ header {
 
 .comment {
     text-align: left;
+    font-size: 1.13em;
+    font-weight: 500;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.element {
+    padding: 1.5em;
+    margin: 0.5em;
+    background-color: #333333;
+    color: #e0e0e0;
+    border-radius: 1em;
+
     font-size: 1.13em;
     font-weight: 500;
     font-family: 'Noto Sans JP', sans-serif;

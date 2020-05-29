@@ -32,6 +32,9 @@
                 <div class="comment">震源地</div>
                 <div class="contents">{{ epicenter }}</div>
             </div>
+            {% for element in explanation[1:] %}
+            <div class="element {{ seismic }}">{{element}}</div>
+            {% endfor %}
         </div>
 
         <div class="right">
@@ -48,9 +51,6 @@
                         {% endfor %}
                     </div>
                     {% endfor %}
-                </div>
-                <div>
-                    {{ explanation[1] }}
                 </div>
             </div>
         </div>
