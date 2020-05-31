@@ -128,47 +128,47 @@ header {
   */
 
 .fill.class-0, .震度0, .震度０ {
-    background-color: #e1e2e3;
+    background-color: #d9d9d9;
     color: black;
 }
 
 .fill.class-1, .震度1, .震度１ {
-    background-color: #56a0d1;
-    color: black;
-}
-
-.fill.class-2, .震度2, .震度２ {
-    background-color: #204eba;
+    background-color: #2d1fcc;
     color: #e0e0e0;
 }
 
+.fill.class-2, .震度2, .震度２ {
+    background-color: #3b93db;
+    color: black;
+}
+
 .fill.class-3, .震度3, .震度３ {
-    background-color: #d6e673;
+    background-color: #67e071;
 }
 
 .fill.class-4, .震度4, .震度４ {
-    background-color: #dbde28;
+    background-color: #e2eb38;
 }
 
 .fill.class-5, .震度5弱, .震度５弱 {
-    background-color: #eba22d;
+    background-color: #e38227;
 }
 
 .fill.class-55, .震度5強, .震度５強 {
-    background-color: #eba22d;
+    background-color: #e38227;
 }
 .fill.class-6, .震度6弱, .震度６弱 {
-    background-color: #e62929;
+    background-color: #e81c2d;
     color: #e0e0e0;
 }
 
 .fill.class-66, .震度6強, .震度６強 {
-    background-color: #e62929;
+    background-color: #e81c2d;
     color: #e0e0e0;
 }
 
 .fill.class-7, .震度7, .震度７ {
-    background-color: #a81d5b;
+    background-color: #db1d95;
     color: #e0e0e0;
 }
 
@@ -182,42 +182,42 @@ header {
 */
 
 div.class-0 {
-    border: solid 0.15em #e1e2e3;
+    border: solid 0.15em #d9d9d9;
 }
 
 div.class-1 {
-   border: solid 0.15em #56a0d1;
+   border: solid 0.15em #2d1fcc;
 }
 
 div.class-2 {
-   border: solid 0.15em #204eba;
+   border: solid 0.15em #3b93db;
 }
 
 div.class-3 {
-   border: solid 0.15em #d6e673;
+   border: solid 0.15em #67e071;
 }
 
 div.class-4 {
-   border: solid 0.15em #dbde28;
+   border: solid 0.15em #e2eb38;
 }
 
 div.class-5 {
-   border: solid 0.15em #eba22d;
+   border: solid 0.15em #e38227;
 }
 
 div.class-55 {
-   border: solid 0.15em #eba22d;
+   border: solid 0.15em #e38227;
 }
 div.class-6 {
-   border: solid 0.15em #e62929;
+   border: solid 0.15em #e81c2d;
 }
 
 div.class-66 {
-   border: solid 0.15em #e62929;
+   border: solid 0.15em #e81c2d;
 }
 
 div.class-7 {
-   border: solid 0.15em #a81d5b;
+   border: solid 0.15em #db1d95;
 }
 
 div.none {
