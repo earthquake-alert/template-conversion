@@ -26,25 +26,25 @@ def template():
     now = datetime.datetime.now()
 
     seismic = ''
-    if max_seismic_intensity in ('0', '０'):
+    if max_seismic_intensity in {'0', '０'}:
         seismic = 'class-0'
-    elif max_seismic_intensity in ('1', '１'):
+    elif max_seismic_intensity in {'1', '１'}:
         seismic = 'class-1'
-    elif max_seismic_intensity in ('2', '２'):
+    elif max_seismic_intensity in {'2', '２'}:
         seismic = 'class-2'
-    elif max_seismic_intensity in ('3', '３'):
+    elif max_seismic_intensity in {'3', '３'}:
         seismic = 'class-3'
-    elif max_seismic_intensity in ('4', '４'):
+    elif max_seismic_intensity in {'4', '４'}:
         seismic = 'class-4'
-    elif max_seismic_intensity in ('5弱', '５弱'):
+    elif max_seismic_intensity in {'5弱', '５弱'}:
         seismic = 'class-5'
-    elif max_seismic_intensity in ('5強', '５強'):
+    elif max_seismic_intensity in {'5強', '５強'}:
         seismic = 'class-55'
-    elif max_seismic_intensity in ('6弱', '６弱'):
+    elif max_seismic_intensity in {'6弱', '６弱'}:
         seismic = 'class-6'
-    elif max_seismic_intensity in ('6強', '６強'):
+    elif max_seismic_intensity in {'6強', '６強'}:
         seismic = 'class-66'
-    elif max_seismic_intensity in ('7', '７'):
+    elif max_seismic_intensity in {'7', '７'}:
         seismic = 'class-7'
     else:
         seismic = 'none'
