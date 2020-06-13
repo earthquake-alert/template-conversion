@@ -1,11 +1,12 @@
-# template-conversion
+# Template conversion
 
 ![python](https://img.shields.io/github/pipenv/locked/python-version/earthquake-alert/template-conversion?style=flat-square)
 ![license](https://img.shields.io/github/license/earthquake-alert/template-conversion?style=flat-square)
 
 🇯🇵| [🇺🇸](documents/README_en.md)
 
-![image](assets/demo_1.png)
+<img src="assets/demo_4.png" width="45%" style="margin:10px;"><img src="assets/demo_5.png" width="45%" style="margin:10px;">
+<img src="assets/demo_6.png" width="45%" style="margin:10px;"><img src="assets/demo_7.png" width="45%" style="margin:10px;">
 
 ## tl;dr
 
@@ -21,11 +22,11 @@
     # pipを使用してpipenvをインストールする
     pip install pipenv
 
-    # case.1 pipenvの仮想環境上にインストールする & 仮想環境を立ち上げる
+    # pipenvの仮想環境上にインストールする & 仮想環境を立ち上げる
     pipenv install
     pipenv shell
 
-    # システム上にインストールする（pipでライブラリを操作可）
+    # もしくはシステム上にインストールする（pipでライブラリを操作可）
     pipenv install --system --deploy
     ```
 
@@ -35,7 +36,8 @@
     python src/main.py
     ```
 
-デフォルトURL: `http://localhost:5000/template`
+デフォルトURL: `http://localhost:5000/template`\
+震度速報（震源・マグニチュードなし）: `http://localhost:5000/report`
 
 ### 📒クエリパラメーターの説明
 
