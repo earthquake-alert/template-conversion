@@ -5,10 +5,7 @@
 
 🇯🇵| [🇺🇸](documents/README_en.md)
 
-<img src="assets/demo_4.png" width="100%">
-<img src="assets/demo_5.png" width="30%">
-<img src="assets/demo_6.png" width="30%">
-<img src="assets/demo_7.png" width="30%">
+![title](assets/title.png)
 
 ## tl;dr
 
