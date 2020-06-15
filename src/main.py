@@ -25,6 +25,12 @@ def template():
 
     now = datetime.datetime.now()
 
+    is_tsunami = False
+    for element in explanation:
+        if '津波' in element and 'この地震による津波の心配はありません。' != element:
+            is_tsunami = True
+            break
+
     seismic = ''
     if max_seismic_intensity in {'0', '０'}:
         seismic = 'class-0'
@@ -57,7 +63,8 @@ def template():
                            epicenter=epicenter,
                            magnitude=magnitude,
                            seismic=seismic,
-                           date=now.strftime('%Y年%m月%d日 %H:%M:%S')
+                           date=now.strftime('%Y年%m月%d日 %H:%M:%S'),
+                           is_tsunami=is_tsunami
                            )
 
 
@@ -72,6 +79,12 @@ def prompt_report():
     max_seismic_intensity = request.args.get('max_si') or 'No data.'
 
     now = datetime.datetime.now()
+
+    is_tsunami = False
+    for element in explanation:
+        if '津波' in element and 'この地震による津波の心配はありません。' != element:
+            is_tsunami = True
+            break
 
     seismic = ''
     if max_seismic_intensity in {'0', '０'}:
@@ -103,7 +116,8 @@ def prompt_report():
                            explanation=explanation,
                            max_seismic_intensity=max_seismic_intensity,
                            seismic=seismic,
-                           date=now.strftime('%Y年%m月%d日 %H:%M:%S')
+                           date=now.strftime('%Y年%m月%d日 %H:%M:%S'),
+                           is_tsunami=is_tsunami
                            )
 
 

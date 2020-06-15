@@ -20,6 +20,11 @@
     </header>
     <main>
         <div class="left">
+            {% if is_tsunami %}
+            <div class="tsunami {{ seismic }}">
+                <div class="contents">津波情報あり</div>
+            </div>
+            {% endif %}
             <div class="max-seismic-intensity fill {{ seismic }}">
                 <div class="comment">最大震度</div>
                 <div class="contents">震度{{ max_seismic_intensity }}</div>

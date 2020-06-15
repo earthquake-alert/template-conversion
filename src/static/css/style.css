@@ -66,6 +66,14 @@ header {
     color: black;
 }
 
+.tsunami {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    margin: 0.5em;
+    background-color: #513bf7;
+    color: #e0e0e0;
+    border-radius: 1em;
+}
+
 .magnitude {
     padding: 0.5em 1.5em 1.5em 1.5em;
     margin: 0.5em;
