@@ -14,26 +14,11 @@
 
 ## 💻使い方
 
-1. 依存関係のインストール
-   - python3、およびpipがインストールされていることが前提です。
+- Docker, docker-composeがインストールされていることが前提です。
 
-    ```bash
-    # pipを使用してpipenvをインストールする
-    pip install pipenv
-
-    # pipenvの仮想環境上にインストールする & 仮想環境を立ち上げる
-    pipenv install
-    pipenv shell
-
-    # もしくはシステム上にインストールする（pipでライブラリを操作可）
-    pipenv install --system --deploy
-    ```
-
-2. 起動する
-
-    ```bash
-    python src/main.py
-    ```
+```bash
+docker-compose up -d
+```
 
 デフォルトURL: `http://localhost:5000/template`\
 震度速報（震源・マグニチュードなし）: `http://localhost:5000/report`
