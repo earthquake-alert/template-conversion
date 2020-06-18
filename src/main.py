@@ -4,7 +4,7 @@
 Copyright (c) 2020 Earthquake alert
 '''
 import ast
-import datetime
+from datetime import datetime, timedelta, timezone
 
 from flask import Flask, render_template, request
 
@@ -23,7 +23,8 @@ def template():
     epicenter = request.args.get('epi') or 'No data.'
     magnitude = request.args.get('mag') or 'No data.'
 
-    now = datetime.datetime.now()
+    jst = timezone(timedelta(hours=+9), 'JST')
+    now = datetime.now(jst)
 
     is_tsunami = False
     for element in explanation:
