@@ -27,7 +27,7 @@
             {% endif %}
             <div class="magnitude {{ seismic }}">
                 <div class="comment">マグニチュード</div>
-                <div class="contents">M {{ magnitude }}</div>
+                <div class="contents">{{ magnitude }}</div>
             </div>
             <div class="max-seismic-intensity fill {{ seismic }}">
                 <div class="comment">最大震度</div>
@@ -60,7 +60,9 @@
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        Copyright (c) 2020 Earthquake alert
+    </footer>
 </body>
 
 </html>
