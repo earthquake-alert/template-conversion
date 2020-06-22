@@ -79,7 +79,8 @@ def prompt_report():
     explanation = ast.literal_eval(request.args.get('exp') or '["No data.", "No data."]')
     max_seismic_intensity = request.args.get('max_si') or 'No data.'
 
-    now = datetime.datetime.now()
+    jst = timezone(timedelta(hours=+9), 'JST')
+    now = datetime.now(jst)
 
     is_tsunami = False
     for element in explanation:

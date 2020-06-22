@@ -132,6 +132,8 @@ footer {
     padding: 0.5em;
     margin: 0 0 0 0;
     clear: left;
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*
