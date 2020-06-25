@@ -28,7 +28,7 @@ def template():
 
     is_tsunami = False
     for element in explanation:
-        if '津波' in element and 'この地震による津波の心配はありません。' != element:
+        if '津波' in element and 'この地震による津波の心配はありません。' not in element:
             is_tsunami = True
             break
 
@@ -84,7 +84,7 @@ def prompt_report():
 
     is_tsunami = False
     for element in explanation:
-        if '津波' in element and 'この地震による津波の心配はありません。' != element:
+        if '津波' in element and 'この地震による津波の心配はありません。' not in element:
             is_tsunami = True
             break
 
