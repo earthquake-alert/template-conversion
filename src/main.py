@@ -22,9 +22,13 @@ def template():
     max_seismic_intensity = request.args.get('max_si') or 'No data.'
     epicenter = request.args.get('epi') or 'No data.'
     magnitude = request.args.get('mag') or 'No data.'
+    date = request.args.get('date') or None
 
-    jst = timezone(timedelta(hours=+9), 'JST')
-    now = datetime.now(jst)
+    if date is None:
+        jst = timezone(timedelta(hours=+9), 'JST')
+        now = datetime.now(jst)
+    else:
+        now = datetime.strptime(str(date), r'%Y%m%d%H%M%S')
 
     is_tsunami = False
     for element in explanation:
@@ -78,9 +82,13 @@ def prompt_report():
     areas = ast.literal_eval(request.args.get('areas') or '{"Null": ["No area."]}')
     explanation = ast.literal_eval(request.args.get('exp') or '["No data.", "No data."]')
     max_seismic_intensity = request.args.get('max_si') or 'No data.'
+    date = request.args.get('date') or None
 
-    jst = timezone(timedelta(hours=+9), 'JST')
-    now = datetime.now(jst)
+    if date is None:
+        jst = timezone(timedelta(hours=+9), 'JST')
+        now = datetime.now(jst)
+    else:
+        now = datetime.strptime(str(date), r'%Y%m%d%H%M%S')
 
     is_tsunami = False
     for element in explanation:
