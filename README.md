@@ -83,15 +83,15 @@ docker-compose up -d
 | 震度  |                                    色                                     |
 | :---: | :-----------------------------------------------------------------------: |
 |   0   | ![#e1e2e3](https://via.placeholder.com/15/d9d9d9/000000?text=+) `#d9d9d9` |
-|   1   | ![#56a0d1](https://via.placeholder.com/15/2d1fcc/000000?text=+) `#2d1fcc` |
-|   2   | ![#204eba](https://via.placeholder.com/15/3b93db/000000?text=+) `#3b93db` |
-|   3   | ![#d6e673](https://via.placeholder.com/15/67e071/000000?text=+) `#67e071` |
-|   4   | ![#dbde28](https://via.placeholder.com/15/e2eb38/000000?text=+) `#e2eb38` |
-|  5-   | ![#eba22d](https://via.placeholder.com/15/e38227/000000?text=+) `#e38227` |
-|  5+   | ![#eba22d](https://via.placeholder.com/15/e38227/000000?text=+) `#e38227` |
-|  6-   | ![#e62929](https://via.placeholder.com/15/e81c2d/000000?text=+) `#e81c2d` |
-|  6+   | ![#e62929](https://via.placeholder.com/15/e81c2d/000000?text=+) `#e81c2d` |
-|   7   | ![#a81d5b](https://via.placeholder.com/15/e81c2d/000000?text=+) `#e81c2d` |
+|   1   | ![#54cfe8](https://via.placeholder.com/15/54cfe8/000000?text=+) `#54cfe8` |
+|   2   | ![#64e375](https://via.placeholder.com/15/64e375/000000?text=+) `#64e375` |
+|   3   | ![#f0ed4d](https://via.placeholder.com/15/f0ed4d/000000?text=+) `#f0ed4d` |
+|   4   | ![#eb9423](https://via.placeholder.com/15/eb9423/000000?text=+) `#eb9423` |
+|  5-   | ![#f74d4d](https://via.placeholder.com/15/f74d4d/000000?text=+) `#f74d4d` |
+|  5+   | ![#f74d4d](https://via.placeholder.com/15/f74d4d/000000?text=+) `#f74d4d` |
+|  6-   | ![#f03eb8](https://via.placeholder.com/15/f03eb8/000000?text=+) `#f03eb8` |
+|  6+   | ![#f03eb8](https://via.placeholder.com/15/f03eb8/000000?text=+) `#f03eb8` |
+|   7   | ![#b347ed](https://via.placeholder.com/15/b347ed/000000?text=+) `#b347ed` |
 | None  | ![#000000](https://via.placeholder.com/15/000000/000000?text=+) `#000000` |
 
 ### ⚖ライセンス

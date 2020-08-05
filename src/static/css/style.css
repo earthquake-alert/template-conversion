@@ -156,42 +156,43 @@ footer {
 }
 
 .fill.class-1, .震度1, .震度１ {
-    background-color: #2d1fcc;
-    color: #e0e0e0;
+    background-color: #54cfe8;
 }
 
 .fill.class-2, .震度2, .震度２ {
-    background-color: #3b93db;
+    background-color: #64e375;
     color: black;
 }
 
 .fill.class-3, .震度3, .震度３ {
-    background-color: #67e071;
+    background-color: #f0ed4d;
 }
 
 .fill.class-4, .震度4, .震度４ {
-    background-color: #e2eb38;
+    background-color: #eb9423;
 }
 
 .fill.class-5, .震度5弱, .震度５弱 {
-    background-color: #e38227;
+    background-color: #f74d4d;
+    color: #e0e0e0;
 }
 
 .fill.class-55, .震度5強, .震度５強 {
-    background-color: #e38227;
+    background-color: #f74d4d;
+    color: #e0e0e0;
 }
 .fill.class-6, .震度6弱, .震度６弱 {
-    background-color: #e81c2d;
+    background-color: #f03eb8;
     color: #e0e0e0;
 }
 
 .fill.class-66, .震度6強, .震度６強 {
-    background-color: #e81c2d;
+    background-color: #f03eb8;
     color: #e0e0e0;
 }
 
 .fill.class-7, .震度7, .震度７ {
-    background-color: #db1d95;
+    background-color: #b347ed;
     color: #e0e0e0;
 }
 
@@ -209,38 +210,38 @@ div.class-0 {
 }
 
 div.class-1 {
-   border: solid 0.15em #2d1fcc;
+   border: solid 0.15em #54cfe8;
 }
 
 div.class-2 {
-   border: solid 0.15em #3b93db;
+   border: solid 0.15em #64e375;
 }
 
 div.class-3 {
-   border: solid 0.15em #67e071;
+   border: solid 0.15em #f0ed4d;
 }
 
 div.class-4 {
-   border: solid 0.15em #e2eb38;
+   border: solid 0.15em #eb9423;
 }
 
 div.class-5 {
-   border: solid 0.15em #e38227;
+   border: solid 0.15em #f74d4d;
 }
 
 div.class-55 {
-   border: solid 0.15em #e38227;
+   border: solid 0.15em #f74d4d;
 }
 div.class-6 {
-   border: solid 0.15em #e81c2d;
+   border: solid 0.15em #f03eb8;
 }
 
 div.class-66 {
-   border: solid 0.15em #e81c2d;
+   border: solid 0.15em #f03eb8;
 }
 
 div.class-7 {
-   border: solid 0.15em #db1d95;
+   border: solid 0.15em #b347ed;
 }
 
 div.none {
