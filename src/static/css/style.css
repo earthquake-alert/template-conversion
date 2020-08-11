@@ -7,6 +7,10 @@ body {
     margin: 0 0 0 0;
 }
 
+.container::-webkit-scrollbar {
+    display:none;
+}
+
 h1 {
     text-align: center;
     font-weight: 700;
@@ -173,31 +177,31 @@ footer {
 }
 
 .fill.class-5, .震度5弱, .震度５弱 {
-    background-color: #f74d4d;
-    color: #e0e0e0;
+    background: repeating-linear-gradient(125deg, #f74d4d 0, #f74d4d 3em, #181818 3em, #181818 6em);
+    color: #ffffff;
 }
 
 .fill.class-55, .震度5強, .震度５強 {
-    background-color: #f74d4d;
-    color: #e0e0e0;
+    background: repeating-linear-gradient(125deg, #f74d4d 0, #f74d4d 3em, #181818 3em, #181818 6em);
+    color: #ffffff;
 }
 .fill.class-6, .震度6弱, .震度６弱 {
-    background-color: #f03eb8;
-    color: #e0e0e0;
+    background: repeating-linear-gradient(125deg, #f03eb8 0, #f03eb8 3em, #181818 3em, #181818 6em);
+    color: #ffffff;
 }
 
 .fill.class-66, .震度6強, .震度６強 {
-    background-color: #f03eb8;
-    color: #e0e0e0;
+    background: repeating-linear-gradient(125deg, #f03eb8 0, #f03eb8 3em, #181818 3em, #181818 6em);
+    color: #ffffff;
 }
 
 .fill.class-7, .震度7, .震度７ {
-    background-color: #b347ed;
-    color: #e0e0e0;
+    background: repeating-linear-gradient(125deg, #b347ed 0, #b347ed 3em, #181818 3em, #181818 6em);
+    color: #ffffff;
 }
 
 .fill.none {
-    background-color: black;
+    background: repeating-linear-gradient(125deg, black 0, black 3em, #181818 3em, #181818 6em);
     color: #e0e0e0;
 }
 
